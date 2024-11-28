@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">
+                <img src="https://www.svgrepo.com/show/530439/api-interface.svg" width="60" height="52">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link active" aria-current="page" href="#">Socket</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="clientServer.html">Modello Server Client</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="tcpUdp.html">TCP UDP</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="glossario.html">Glossario</a>
+                  </li>
+  
+              </ul>
+            </div>
+        </nav>
+        <div class="content">
+            <h1>Socket</h1>
+            <p><strong>Definizione:</strong> Il termine "Socket" si riferisce al punto di comunicazione tra due processi in una rete. È utilizzato nelle comunicazioni TCP/IP.</p>
+
+            <div class="index">
+                <h2>Indice</h2>
+                <ul>
+                    <li><a href="#intro">Introduzione</a></li>
+                    <li><a href="#representation">Rappresentazione del Socket</a></li>
+                    <li><a href="#types">Tipi principali di Socket</a></li>
+                    <li><a href="#workflow">Flusso di lavoro</a></li>
+                </ul>
+            </div>
+        
+            <h2 id="intro">Introduzione</h2>
+    <p>Il Socket è un metodo di comunicazione che è stato inizialmente utilizzato nel sistema operativo <a href="glossario.html" data-bs-toggle="tooltip" title="Sistema operativo che gestisce file e operazioni di rete.">UNIX</a>. In UNIX, tutte le operazioni vengono trattate come file, quindi anche la comunicazione tramite Socket si basa su operazioni sui file. Sia il <a href="glossario.html" data-bs-toggle="tooltip" title="Richiedente del servizio.">client</a> che il <a href="glossario.html" data-bs-toggle="tooltip" title="Fornitore di servizio.">server</a> aprono un file, leggono o scrivono dati, e poi chiudono il file per scambiarsi informazioni e completare la comunicazione.</p>
+    <p>Il Socket è la base della comunicazione di rete ed è un'unità fondamentale per il funzionamento dei protocolli <a href="glossario.html" data-bs-toggle="tooltip" title="Protocollo di trasporto utilizzato per garantire la connessione e l'affidabilità.">TCP/IP</a>. Può essere visto come un "punto" di comunicazione tra i <a href="glossario.html" data-bs-toggle="tooltip" title="Processo in esecuzione che può comunicare tramite socket.">processi</a> che si trovano su computer diversi, ed è l'interfaccia che i programmi usano per comunicare tra loro in una rete. I socket operano all'interno di un "dominio di comunicazione", che è un concetto usato per gestire la comunicazione tra diversi <a href="glossario.html" data-bs-toggle="tooltip" title="Programmi o processi che interagiscono tra loro.">processi</a>. I vari <a href="glossario.html" data-bs-toggle="tooltip" title="Programmi che interagiscono tra loro.">processi</a> utilizzano questo dominio comune per scambiare dati attraverso i protocolli Internet.</p>
+
+    <h2 id="representation">Rappresentazione del Socket</h2>
+    <p>Un socket include due componenti: l'<a href="glossario.html" data-bs-toggle="tooltip" title="Indirizzo unico assegnato a un dispositivo in una rete.">indirizzo IP</a> e il <a href="glossario.html" data-bs-toggle="tooltip" title="Numero che identifica un'applicazione su un dispositivo di rete.">numero di porta</a>. Ogni coppia di <a href="glossario.html" data-bs-toggle="tooltip" title="Processo in esecuzione che invia o riceve dati.">processi</a> in comunicazione utilizza un socket distinto. I socket sono utilizzati per differenziare la comunicazione tra <a href="glossario.html" data-bs-toggle="tooltip" title="Programmi che comunicano tra loro.">processi</a> distinti. I parametri principali di un socket sono: <a href="glossario.html" data-bs-toggle="tooltip" title="Indirizzo unico di un dispositivo in rete.">indirizzo IP</a> del destinatario, protocollo di trasporto utilizzato e <a href="glossario.html" data-bs-toggle="tooltip" title="Numero identificativo per l'applicazione sulla rete.">numero di porta</a> del protocollo di trasporto.</p>
+    <p>La rappresentazione di un socket è nel formato "Indirizzo IP: Numero di Porta". Ad esempio, se l'indirizzo IP è 210.37.145.1 e la porta è 23, il socket sarà rappresentato come (210.37.145.1:23).</p>
+
+    <h2 id="types">Tipi principali di Socket</h2>
+    <p>Nel livello di trasporto dei protocolli di rete, i socket possono essere suddivisi in tre principali tipi:</p>
+    <ul>
+        <li><strong>Socket di flusso (SOCK_STREAM):</strong> I socket di flusso forniscono un servizio di trasmissione dati affidabile, orientato alla connessione. Garantisce che i dati vengano trasmessi senza errori, senza ripetizioni e nell'ordine corretto. I socket di flusso sono basati sul <a href="glossario.html" data-bs-toggle="tooltip" title="Protocollo orientato connessione.">protocollo TCP</a> (Transmission Control Protocol).</li>
+        <li><strong>Socket di datagramma (SOCK_DGRAM):</strong> I socket di datagramma forniscono un servizio senza connessione e non affidabile. Non garantiscono che i dati vengano trasmessi correttamente, quindi i dati potrebbero perdersi o essere duplicati. I socket di datagramma utilizzano il <a href="glossario.html" data-bs-toggle="tooltip" title="Protocollo senza connessione.">protocollo UDP</a> (User Datagram Protocol) per la trasmissione dei dati.</li>
+        <li><strong>Socket raw (SOCK_RAW):</strong> I socket raw permettono di leggere e scrivere pacchetti IP che non sono stati processati dal kernel. A differenza dei socket di flusso e di datagramma, che leggono solo i dati TCP e UDP, i socket raw consentono di lavorare con altri protocolli di rete. Questi socket sono utilizzati per sviluppare protocolli o per operazioni di basso livello.</li>
+    </ul>
+
+    <h2 id="workflow">Flusso di lavoro</h2>
+    <p>Per la comunicazione attraverso Internet, almeno una coppia di socket è necessaria: uno sul <a href="glossario.html" data-bs-toggle="tooltip" title="Processo che invia richieste e riceve risposte.">client</a> (Client Socket) e l'altro sul <a href="glossario.html" data-bs-toggle="tooltip" title="Processo che fornisce risposte alle richieste.">server</a> (Server Socket). Il processo di connessione tra i socket può essere suddiviso in tre fasi:</p>
+    <ul>
+        <li><strong>Ascolto del server:</strong> Il server rimane in ascolto su un socket, senza destinazione specifica, in attesa di richieste di connessione da parte dei <a href="glossario.html" data-bs-toggle="tooltip" title="Processo che invia richieste di connessione.">client</a>.</li>
+        <li><strong>Richiesta del client:</strong> Il client invia una richiesta di connessione al server, specificando l'indirizzo del server e il numero di porta.</li>
+        <li><strong>Conferma della connessione:</strong> Quando il server riceve la richiesta, stabilisce una connessione e risponde al client, confermando la connessione. Nel frattempo, il server continua ad ascoltare altre richieste di connessione.</li>
+    </ul>
+        </div>
+        
+    </div>
+    <footer class="bg-body-tertiary text-center text-lg-start">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.1);">
+          Alessandro Ding 5F
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
