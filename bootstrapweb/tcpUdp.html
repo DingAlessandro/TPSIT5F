@@ -29,7 +29,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="clientServer.html">Modello Server Client</a>
+                    <a class="nav-link" href="clientServer.html">Modello Client Server</a>
                 </li>
 
                 <li class="nav-item active">
@@ -66,15 +66,15 @@
 </p>
 <p><strong>Caratteristiche principali:</strong></p>
 <ul>
-    <li><strong>Connessioni uno-a-uno:</strong> Ogni canale è dedicato a un <a href="glossario.html" data-bs-toggle="tooltip" title="Canale di comunicazione tra un client e un server.">client</a> e un <a href="glossario.html" data-bs-toggle="tooltip" title="Sistema che fornisce servizi o risorse ai client.">server</a>.</li>
-    <li><strong>Segmentazione e verifica:</strong> I dati vengono suddivisi in <a href="glossario.html" data-bs-toggle="tooltip" title="Parte di un messaggio più grande che viene inviata separatamente.">segmenti</a>, e ogni segmento viene verificato dal destinatario per garantire accuratezza e completezza. Eventuali errori portano a una richiesta di ritrasmissione.</li>
+    <li><strong>Connessioni uno-a-uno:</strong> Ogni canale è dedicato a un <a href="glossario.html#client" data-bs-toggle="tooltip" title="Canale di comunicazione tra un client e un server.">client</a> e un <a href="glossario.html#server" data-bs-toggle="tooltip" title="Sistema che fornisce servizi o risorse ai client.">server</a>.</li>
+    <li><strong>Segmentazione e verifica:</strong> I dati vengono suddivisi in <a href="glossario.html#segmenti" data-bs-toggle="tooltip" title="Parte di un messaggio più grande che viene inviata separatamente.">segmenti</a>, e ogni segmento viene verificato dal destinatario per garantire accuratezza e completezza. Eventuali errori portano a una richiesta di ritrasmissione.</li>
     <li><strong>Inizializzazione e terminazione:</strong> La connessione si apre attraverso una procedura detta "stretta di mano a tre vie" (Three-Way Handshake) e si chiude con una "chiusura in quattro passi" (>Four-Way Handshake).
     </li>
 </ul>
 
 <h2 id="udp">Protocollo Datagramma Utente (UDP)</h2>
 <p>
-    UDP è un protocollo semplice e non affidabile, orientato ai <a href="glossario.html" data-bs-toggle="tooltip" title="Unità di dati inviata su una rete senza controllo di flusso o ordine.">datagrammi</a>. 
+    UDP è un protocollo semplice e non affidabile, orientato ai <a href="glossario.html#datagramma" data-bs-toggle="tooltip" title="Unità di dati inviata su una rete senza controllo di flusso o ordine.">datagrammi</a>. 
     Non garantisce la consegna, né fornisce conferma, ordinamento, o controllo del flusso dei dati. 
     È adatto per applicazioni in cui la velocità di trasmissione è più importante dell'affidabilità.
 </p>
