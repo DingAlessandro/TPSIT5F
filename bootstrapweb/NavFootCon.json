@@ -1,0 +1,12 @@
+{
+    "navbar": {
+        "home": "Home",
+        "socket": "Socket",
+        "client_server": "Modello Client Server",
+        "tcp_udp": "TCP UDP",
+        "glossario": "Glossario"
+    },
+    "footer": {
+        "author": "Alessandro Ding 5F"
+    }
+}
