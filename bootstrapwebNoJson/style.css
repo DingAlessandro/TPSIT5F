@@ -1,0 +1,47 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Imposta l'altezza del documento */
+}
+body {
+    display: flex;
+    flex-direction: column; /* Colonna verticale */
+}
+.page {
+    flex: 1; /* Riempie lo spazio tra header e footer */
+    display: flex;
+    flex-direction: column; /* Colonna verticale per il contenuto */
+}
+.content {
+    flex: 1; /* Spinge il footer in basso */
+    margin: 20px auto;
+    min-width: 90%;
+    max-width: 90%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+}
+.index ul {
+    list-style: none;
+}
+.index ul li a {
+    text-decoration: none;
+    color: #125da4b4;
+    font-weight: bold;
+}
+.index ul li a:hover {
+    text-decoration: underline; 
+}
+.content h1, .content h2 {
+    border-left: 4px solid #0055a5;
+    padding-left: 10px;
+    margin-top: 20px;
+    color: #0055a5;
+}
+.content a{
+    text-decoration: none;
+}
+.content a:hover{
+    text-decoration: underline; 
+}
