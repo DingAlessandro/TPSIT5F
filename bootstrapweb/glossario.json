@@ -1,0 +1,70 @@
+{
+    "accordionItems": [
+      {
+        "id": "processo",
+        "title": "Processo",
+        "content": "Un processo è un'istanza di un programma in esecuzione, che include codice, dati e risorse del sistema operativo."
+      },
+      {
+        "id": "tcp",
+        "title": "TCP",
+        "content": "TCP (Transmission Control Protocol) è un protocollo di comunicazione affidabile che garantisce l'ordine e l'integrità dei dati tra due host in una rete."
+      },
+      {
+        "id": "udp",
+        "title": "UDP",
+        "content": "UDP (User Datagram Protocol) è un protocollo di comunicazione che trasmette dati senza stabilire una connessione, con minore affidabilità ma maggiore velocità rispetto a TCP."
+      },
+      {
+        "id": "client",
+        "title": "Client",
+        "content": "Il client è un'applicazione o un dispositivo che richiede un servizio da un server in una rete, inviando richieste e ricevendo risposte."
+      },
+      {
+        "id": "server",
+        "title": "Server",
+        "content": "Il server è un sistema o applicazione che fornisce risorse o servizi a un client, rispondendo alle sue richieste in una rete."
+      },
+      {
+        "id": "protocollo",
+        "title": "Protocollo",
+        "content": "Un protocollo è un insieme di regole che definiscono come i dati vengono trasmessi e ricevuti tra i dispositivi in una rete."
+      },
+      {
+        "id": "unix",
+        "title": "Unix",
+        "content": "Unix è un sistema operativo multitasking e multiutente, noto per la sua stabilità, sicurezza e la struttura di file system gerarchica, ampiamente utilizzato in ambienti server e di sviluppo."
+      },
+      {
+        "id": "ip",
+        "title": "Indirizzo IP",
+        "content": "Un indirizzo IP è un identificatore numerico unico assegnato a ogni dispositivo connesso a una rete, utilizzato per localizzare e comunicare con altri dispositivi su Internet o una rete locale."
+      },
+      {
+        "id": "porta",
+        "title": "Porta",
+        "content": "Una porta è un numero che identifica un'applicazione o un servizio specifico su un dispositivo di rete, utilizzato per indirizzare correttamente i dati tra client e server."
+      },
+      {
+        "id": "lan",
+        "title": "Rete Locale (LAN)",
+        "content": "Una rete locale (LAN) collega dispositivi vicini, come in un ufficio o abitazione, per condividere risorse e dati in modo rapido e sicuro."
+      },
+      {
+        "id": "database",
+        "title": "Database",
+        "content": "Un database è un sistema organizzato per archiviare, gestire e recuperare dati in modo efficiente tramite software specifico."
+      },
+      {
+        "id": "segmenti",
+        "title": "Segmenti",
+        "content": "I segmenti sono blocchi di dati divisi per il trasporto in rete, specialmente nel contesto del protocollo TCP, per garantire una trasmissione efficiente e ordinata."
+      },
+      {
+        "id": "datagramma",
+        "title": "Datagrammi",
+        "content": "I datagrammi sono unità di dati indipendenti utilizzate principalmente nei protocolli senza connessione come UDP, che vengono inviati senza garantire ordine o affidabilità nella consegna."
+      }
+    ]
+  }
+  

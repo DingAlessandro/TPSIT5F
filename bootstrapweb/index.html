@@ -49,50 +49,36 @@
       </div>
     </nav>
     <div class="content">
-      <h1>Contenuti</h1>
-      <p>il sito trattera sui socket e sui argomenti correlati com modello client server e i protocoli TCP e UDP</p>
+      <h1 id="title"></h1>
+      <p id="description"></p>
       <div class="index">
-        <h2>Indice</h2>
-        <ul>
-          <li><a href="#socket">Socket</a></li>
-          <li><a href="#MCR">Modello Client Server</a></li>
-          <li><a href="#TCP_UDP">TCP e UDP</a></li>
+        <h2 id="index_title"></h2>
+        <ul id="index_items">
+          <li></li>
+          <li></li>
+          <li></li>
         </ul>
       </div>
-      <h2 id="socket">Socket</h2>
-      <p>Un socket è un punto di comunicazione tra due <a href="glossario.html#processo" data-bs-toggle="tooltip"
-          title="esecuzione di un programma.">processi</a> su una rete, utilizzato per inviare e ricevere dati
-        attraverso una rete (come Internet), utilizzando protocolli come <a href="glossario.html#tcp"
-          data-bs-toggle="tooltip" title="Protocollo orientato connessione.">TCP</a> o <a href="glossario.html#udp"
-          data-bs-toggle="tooltip" title="Protocollo senza connessione.">UDP</a>. I socket gestiscono la connessione, la
-        trasmissione dei dati e la chiusura della comunicazione tra <a href="glossario.html#client"
-          data-bs-toggle="tooltip" title="Richiedente del servizio.">client</a> e <a href="glossario.html#server"
-          data-bs-toggle="tooltip" title="Fornitore di servizio.">server</a>.</p>
-      <h2 id="MCR">Modello Client Server</h2>
-      <p>Il modello client-server è un'architettura in cui il <a href="glossario.html#client" data-bs-toggle="tooltip"
-          title="Richiedente del servizio.">client</a> richiede servizi o dati e il <a href="glossario.html#server"
-          data-bs-toggle="tooltip" title="Fornitore di servizio.">server</a> li fornisce. Il <a
-          href="glossario.html#server" data-bs-toggle="tooltip" title="Fornitore di servizio.">server</a> è
-        centralizzato e gestisce le richieste dei <a href="glossario.html#client" data-bs-toggle="tooltip"
-          title="Richiedente del servizio.">client</a>, usando <a href="glossario.html#protocollo"
-          data-bs-toggle="tooltip" title="Regole di comunicazione.">protocolli</a> di comunicazione come TCP/IP.</p>
-      <h2 id="TCP_UDP">TCP e UDP</h2>
-      <p>TCP è un protocollo affidabile e orientato alla connessione, che garantisce la consegna ordinata dei dati,
-        adatto per applicazioni che richiedono precisione come il web.</p>
-      <p>UDP è un protocollo più veloce ma senza connessione, che non garantisce l'affidabilità o l'ordine dei dati,
-        ideale per applicazioni in tempo reale come lo streaming o le chiamate VoIP.</p>
+      <h2 id="socket"></h2>
+      <p id="socket_content"></p>
+      <h2 id="MCR"></h2>
+      <p id="MCR_content"></p>
+      <h2 id="TCP_UDP"></h2>
+      <p id="TCP_description"></p>
+      <p id="UDP_description"></p>
     </div>
   </div>
 
   <footer class="bg-body-tertiary text-center text-lg-start">
-    <div id="Footer"class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.1);">
+    <div id="Footer" class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.1);">
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-  <script src="script.js"></script>
+  <script type="module" src="script.js"></script>
   <script src="stNavFoot.js"></script>
+  <script type="module" src="index.js" defer></script>
 </body>
 
 </html>

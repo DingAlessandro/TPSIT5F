@@ -1,0 +1,101 @@
+{
+    "content": {
+      "title": "TCP UDP",
+      "description": "Nell'architettura di rete TCP/IP, i protocolli TCP (Transmission Control Protocol) e UDP (User Datagram Protocol) sono i due protocolli principali del livello di trasporto, progettati per fornire comunicazioni affidabili o rapide agli utenti.",
+      "index": {
+        "title": "Indice",
+        "items": [
+          {
+            "text": "Protocollo di Controllo della Trasmissione (TCP)",
+            "link": "#tcp"
+          },
+          {
+            "text": "Protocollo Datagramma Utente (UDP)",
+            "link": "#udp"
+          },
+          {
+            "text": "Vantaggi e Svantaggi",
+            "link": "#vantaggi"
+          }
+        ]
+      },
+      "sections": [
+        {
+          "title": "Protocollo di Controllo della Trasmissione (TCP)",
+          "content": "TCP definisce il formato dei dati scambiati tra due computer per garantire una trasmissione affidabile. Fornisce servizi come il trasferimento di flussi di dati, affidabilità, controllo del flusso, operazioni full-duplex e multiplexing. TCP è orientato alla connessione, assicurando che i pacchetti di dati siano consegnati correttamente e nell'ordine corretto attraverso un collegamento dedicato creato prima della trasmissione.",
+          "characteristics": [
+            {
+              "text": "Connessioni uno-a-uno",
+              "html": "Ogni canale è dedicato a un <a href=\"glossario.html#client\" data-bs-toggle=\"tooltip\" title=\"Canale di comunicazione tra un client e un server.\">client</a> e un <a href=\"glossario.html#server\" data-bs-toggle=\"tooltip\" title=\"Sistema che fornisce servizi o risorse ai client.\">server</a>."
+            },
+            {
+              "text": "Segmentazione e verifica",
+              "html": "I dati vengono suddivisi in <a href=\"glossario.html#segmenti\" data-bs-toggle=\"tooltip\" title=\"Parte di un messaggio più grande che viene inviata separatamente.\">segmenti</a>, e ogni segmento viene verificato dal destinatario per garantire accuratezza e completezza. Eventuali errori portano a una richiesta di ritrasmissione."
+            },
+            {
+              "text": "Inizializzazione e terminazione",
+              "html": "La connessione si apre attraverso una procedura detta 'stretta di mano a tre vie' (Three-Way Handshake) e si chiude con una 'chiusura in quattro passi' (Four-Way Handshake)."
+            }
+          ]
+        },
+        {
+          "title": "Protocollo Datagramma Utente (UDP)",
+          "content": "UDP è un protocollo semplice e non affidabile, orientato ai datagrammi. Non garantisce la consegna, né fornisce conferma, ordinamento, o controllo del flusso dei dati. È adatto per applicazioni in cui la velocità di trasmissione è più importante dell'affidabilità.",
+          "characteristics": [
+            {
+              "text": "Senza connessione",
+              "html": "UDP non richiede la creazione di una connessione prima della trasmissione."
+            },
+            {
+              "text": "Invio diretto",
+              "html": "I dati vengono inviati direttamente al destinatario senza preoccuparsi del loro stato, simile all'invio di un messaggio SMS: si invia il contenuto e non si verifica la ricezione."
+            }
+          ]
+        },
+        {
+          "title": "Vantaggi e Svantaggi",
+          "sections": [
+            {
+              "protocol": "TCP",
+              "advantages": [
+                {
+                  "text": "Affidabilità elevata",
+                  "html": "I pacchetti di dati sono sempre verificati e consegnati in ordine."
+                },
+                {
+                  "text": "Servizi orientati alla connessione",
+                  "html": "Garantiscono comunicazioni sicure e stabili."
+                }
+              ],
+              "disadvantages": [
+                {
+                  "text": "Più lento rispetto a UDP",
+                  "html": "A causa del sovraccarico della gestione della connessione e della verifica dei dati."
+                }
+              ]
+            },
+            {
+              "protocol": "UDP",
+              "advantages": [
+                {
+                  "text": "Maggiore velocità",
+                  "html": "La trasmissione avviene senza controlli aggiuntivi."
+                },
+                {
+                  "text": "Adatto a dati in tempo reale",
+                  "html": "Ideale per applicazioni come <a data-bs-toggle=\"tooltip\" title=\"Contenuti video che vengono trasmessi in tempo reale.\">streaming video</a> e audio."
+                }
+              ],
+              "disadvantages": [
+                {
+                  "text": "Non affidabile",
+                  "html": "I pacchetti possono essere persi, duplicati o ricevuti fuori ordine."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+  

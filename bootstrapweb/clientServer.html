@@ -49,87 +49,38 @@
       </div>
     </nav>
     <div class="content">
-      <h1>Server-Client, ovvero la struttura Client-Server (C/S)</h1>
-      <p><strong>Definizione:</strong> La struttura C/S di solito adotta una configurazione a due livelli. Il server è
-        responsabile della gestione dei dati, mentre il client si occupa delle attività di interazione con l'utente.</p>
-
+      <h1 id="title"></h1>
+      <p id="description"></p>
+    
       <div class="index">
-        <h2>Indice</h2>
-        <ul>
-          <li><a href="#structure">Struttura e descrizione</a></li>
-          <li><a href="#key-elements">Elementi chiave del modello C/S</a></li>
-          <li><a href="#advantages">Vantaggi e svantaggi</a></li>
+        <h2 id="index_title"></h2>
+        <ul id="index_items">
+          <li></li>
+          <li></li>
+          <li></li>
         </ul>
       </div>
-
-      <h2 id="structure">Struttura e descrizione</h2>
-      <p>Il <a href="glossario.html#client" data-bs-toggle="tooltip"
-          title="Processo che richiede un servizio.">client</a> si connette al <a href="glossario.html#server"
-          data-bs-toggle="tooltip" title="Processo che fornisce un servizio.">server</a> tramite una <a
-          href="glossario.html#lan" data-bs-toggle="tooltip" title="Rete di computer interconnessi tra loro.">rete
-          locale</a>, riceve le richieste dall'utente e invia tali richieste al server per operare sui dati. Il server
-        accetta le richieste del client, restituisce i dati al client, che poi esegue i calcoli necessari e presenta i
-        risultati all'utente. Il server è anche responsabile della protezione dei dati e della gestione dell'integrità
-        delle informazioni, consentendo l'accesso simultaneo di più client, il che implica che il server debba avere una
-        notevole capacità di elaborazione hardware.</p>
-      <p>Nel modello C/S, l'applicazione è suddivisa in due parti: la parte <a href="glossario.html#server"
-          data-bs-toggle="tooltip" title="Processo che fornisce un servizio.">server</a> e la parte <a
-          href="glossario.html#client" data-bs-toggle="tooltip" title="Processo che richiede un servizio.">client</a>.
-        La parte server gestisce le informazioni e le funzioni condivise da più utenti, eseguendo operazioni di servizio
-        in background, come il controllo delle operazioni su un <a href="glossario.html#database"
-          data-bs-toggle="tooltip" title="Sistema di gestione di dati organizzati.">database</a> condiviso; la parte
-        client è esclusiva dell'utente e si occupa delle funzionalità di interfaccia, con ampie capacità di gestione
-        degli errori e assistenza online, oltre a consentire il passaggio tra diverse sotto-applicazioni.</p>
-
-      <h2 id="key-elements">Elementi chiave del modello C/S</h2>
-      <p>Gli elementi chiave del modello C/S sono: l'azione viene avviata dal <a href="glossario.html#client"
-          data-bs-toggle="tooltip" title="Processo che richiede un servizio.">client</a>, e il <a
-          href="glossario.html#server" data-bs-toggle="tooltip" title="Processo che fornisce un servizio.">server</a>
-        resta in attesa passiva della richiesta del client; il client e il server sono connessi tramite un canale di
-        comunicazione. Il collegamento tra i due <a href="glossario.html#processo" data-bs-toggle="tooltip"
-          title="Processo che esegue un'operazione in esecuzione.">processi</a> è rappresentato internamente da buffer e
-        da un insieme di meccanismi di <a href="glossario.html#protocollo" data-bs-toggle="tooltip"
-          title="Regole di comunicazione.">protocollo</a>, mentre esternamente il collegamento appare più affidabile
-        rispetto a una connessione senza stato. La comunicazione completa tra i processi di rete richiede due <a
-          href="glossario.html#processo" data-bs-toggle="tooltip"
-          title="Processi che comunicano attraverso una rete.">processi</a> e l'uso di un <a
-          href="glossario.html#protocollo" data-bs-toggle="tooltip" title="Regole di comunicazione.">protocollo</a> di
-        livello superiore comune, con l'identificazione del processo tramite l'<a href="#" data-bs-toggle="tooltip"
-          title="Indirizzo unico di un dispositivo nella rete.">indirizzo locale</a>, il <a href="#"
-          data-bs-toggle="tooltip" title="Numero identificativo di un'applicazione in una rete.">numero di porta
-          locale</a>, il <a href="#" data-bs-toggle="tooltip"
-          title="Numero di porta di un altro dispositivo remoto.">numero di porta remota</a> e l'<a href="#"
-          data-bs-toggle="tooltip" title="Indirizzo unico di un dispositivo remoto nella rete.">indirizzo remoto</a>.
-      </p>
-
-      <h2 id="advantages">Vantaggi e svantaggi</h2>
-      <p><strong>Vantaggi:</strong></p>
-      <ul>
-        <li><a href="#" data-bs-toggle="tooltip" title="Alta capacità di interazione tra client e server.">Forte
-            interattività</a></li>
-        <li><a href="#" data-bs-toggle="tooltip"
-            title="Meccanismi che proteggono le informazioni durante l'accesso.">Sicurezza nelle modalità di accesso</a>
-        </li>
-        <li><a href="#" data-bs-toggle="tooltip" title="Velocità con cui il sistema risponde alle richieste.">Alta
-            velocità di risposta</a></li>
-        <li><a href="#" data-bs-toggle="tooltip"
-            title="Gestione di grandi quantità di dati in modo efficiente.">Efficace gestione di grandi quantità di
-            dati</a></li>
+    
+      <h2 id="structure"></h2>
+      <p id="structure_content"></p>
+    
+      <h2 id="key-elements"></h2>
+      <p id="key-elements_content"></p>
+    
+      <h2 id="advantages_title"></h2>
+      <ul id="advantages_list">
+        <li></li>
+        <li></li>
+        <li></li>
       </ul>
-
-      <p><strong>Svantaggi:</strong></p>
-      <ul>
-        <li><a href="#" data-bs-toggle="tooltip" title="Non è adatto a tutti i tipi di rete.">Mancanza di
-            universalità</a></li>
-        <li><a href="#" data-bs-toggle="tooltip"
-            title="L'aggiornamento richiede una progettazione software complessa.">La manutenzione e l'aggiornamento del
-            sistema richiedono la riprogettazione e lo sviluppo del software, aumentando la complessità</a></li>
-        <li><a href="#" data-bs-toggle="tooltip"
-            title="Difficoltà nell'espandere il sistema per grandi reti.">Difficoltà nell'espandere ulteriormente i
-            dati, rendendo la struttura C/S limitata a piccole reti locali</a></li>
+    
+      <h2 id="disadvantages_title"></h2>
+      <ul id="disadvantages_list">
+        <li></li>
+        <li></li>
+        <li></li>
       </ul>
-    </div>
-
+    </div>    
   </div>
 
   <footer class="bg-body-tertiary text-center text-lg-start">
@@ -139,8 +90,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
     <script src="stNavFoot.js"></script>
+    <script type="module" src="clientServer.js"></script>
 </body>
 
 </html>
