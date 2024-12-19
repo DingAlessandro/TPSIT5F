@@ -1,0 +1,32 @@
+{
+    "question": "Domanda A",
+    "question_text": "Svolgi i seguenti esercizi",
+    "questions": [
+      {
+        "question_text": "Domanda 1: 3 + 2",
+        "options": [
+          {"value": "a", "text": "4"},
+          {"value": "b", "text": "5"},
+          {"value": "c", "text": "6"}
+        ]
+      },
+      {
+        "question_text": "Domanda 2: 8 - 3",
+        "options": [
+          {"value": "a", "text": "5"},
+          {"value": "b", "text": "6"},
+          {"value": "c", "text": "7"}
+        ]
+      },
+      {
+        "question_text": "Domanda 3: 6 + 4",
+        "options": [
+          {"value": "a", "text": "9"},
+          {"value": "b", "text": "10"},
+          {"value": "c", "text": "11"}
+        ]
+      }
+    ]
+  }
+  
+  

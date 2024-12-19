@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d3d3d3; /* Grigio chiaro */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 20px 40px;
+}
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+header #timer {
+    font-size: 32px;
+    font-weight: bold;
+}
+.container {
+    padding: 20px;
+    margin-top: 20px;
+    text-align: left;
+    flex-grow: 1; /* Permette alla container di espandersi per occupare lo spazio disponibile */
+}
+.question-box {
+    background-color: #e0e8f1;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #a3aab3;
+    border-radius: 10px;
+    height: 70vh; /* Altezza della question box a metà pagina */
+    overflow-y: auto;
+}
+.question {
+    margin-bottom: 20px;
+}
+.options {
+    list-style-type: none;
+    padding: 0;
+}
+.options li {
+    margin: 10px 0;
+}
+.options input[type="radio"] {
+    margin-right: 10px;
+}
+.button-container {
+    text-align: right;
+}
+.button-container {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 30px;
+}
+.button {
+    background-color: black;
+    color: white;
+    font-size: 24px; /* Aumentata la grandezza dei bottoni */
+    font-weight: bold;
+    padding: 20px 40px; /* Aumentato il padding */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+.button:hover {
+    background-color: white;
+    color: black;
+}
+.box {
+    width: 450px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease-in-out; /* Effetto transizione */
+    text-decoration: none;
+}
+.box:hover {
+    background-color: black; /* Sfondo nero */
+    color: white; /* Testo bianco */
+}
+.box.fine {
+    cursor: pointer; /* Rende cliccabile il div Fine */
+}
+#result {
+    display: none;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: black;
+}
+.question-box {
+    background-color: #e0e8f1;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #a3aab3;
+    border-radius: 10px;
+    height: 70vh; /* Altezza della question box a metà pagina */
+    overflow-y: auto;
+}
+.input-box {
+    width: 99%;
+    height: 80%; /* Aumentato l'altezza del textarea */
+    padding: 10px;
+    border: 1px solid #a3aab3;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    resize: none;
+}
+.containers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    justify-items: center;
+    align-items: center;
+    padding: 40px;
+    margin-top: 50px; /* Spostamento verso il basso */
+}
