@@ -1,0 +1,14 @@
+{
+  "header": {
+    "logo": "images/logo.png",
+    "homeLink": "index.php",
+    "homeText": "Home",
+    "loginLink": "login.php",
+    "loginText": "Login",
+    "cartLink": "cart.php",
+    "cartIcon": "images/carrello.png"
+  },
+  "footer": {
+    "text": "&copy; 2025 visvim. All rights reserved."
+  }
+}

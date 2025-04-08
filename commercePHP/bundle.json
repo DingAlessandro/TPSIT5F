@@ -1,0 +1,96 @@
+{
+    "bundle": {
+      "name": "Bundle Package",
+      "price": "$2500.00",
+      "image": "images/bundle.jpg",
+      "description": "Questo è un pacchetto che include più prodotti, ideale per chi cerca uno stile di vita di alta qualità.",
+      "items": [
+        {
+          "name": "DALTON SLACKS (W/L)",
+          "colors": [
+            {
+              "color_name": "BLACK",
+              "image": "images/DALTON SLACKS/S_black.jpg",
+              "sizes": ["1", "2", "3", "4", "5"]
+            },
+            {
+              "color_name": "CHARCOAL",
+              "image": "images/DALTON SLACKS/S_charcoal.jpg",
+              "sizes": ["1", "2", "3", "4", "5"]
+            },
+            {
+              "color_name": "KHAKI",
+              "image": "images/DALTON SLACKS/S_khaki.jpg",
+              "sizes": ["1", "2", "3", "4", "5"]
+            }
+          ]
+        },
+        {
+          "name": "MAVCAT II (M)",
+          "colors": [
+            {
+              "color_name": "BLACK",
+              "image": "images/MAVCAT/M_black.jpg",
+              "sizes": ["ONE SIZE"]
+            },
+            {
+              "color_name": "KHAKI",
+              "image": "images/MAVCAT/M_khaki.jpg",
+              "sizes": ["ONE SIZE"]
+            },
+            {
+              "color_name": "OLIVE",
+              "image": "images/MAVCAT/M_olive.jpg",
+              "sizes": ["ONE SIZE"]
+            }
+          ]
+        },
+        {
+          "name": "COBDA-FOLK",
+          "colors": [
+            {
+              "color_name": "BLACK",
+              "image": "images/COBDA-FOLK/C_black.jpg",
+              "sizes": ["M8", "M9", "M10", "M11", "M12"]
+            },
+            {
+              "color_name": "NAVY",
+              "image": "images/COBDA-FOLK/C_navy.jpg",
+              "sizes": ["M8", "M9", "M10", "M11", "M12"]
+            },
+            {
+              "color_name": "BLUE",
+              "image": "images/COBDA-FOLK/C_blue.jpg",
+              "sizes": ["M8", "M9", "M10", "M11", "M12"]
+            }
+          ]
+        },
+        {
+          "name": "WILDCATTER SHIRT L/S",
+          "colors": [
+            {
+              "color_name": "WHITE",
+              "image": "images/WILDCATTER/S_white.jpg",
+              "sizes": ["1", "2", "3", "4", "5"]
+            },
+            {
+              "color_name": "BLACK",
+              "image": "images/WILDCATTER/S_black.jpg",
+              "sizes": ["1", "2", "3", "4", "5"]
+            },
+            {
+              "color_name": "GREEN",
+              "image": "images/WILDCATTER/S_green.jpg",
+              "sizes": ["1", "2", "3", "4", "5"]
+            }
+          ]
+        }
+      ]
+    },
+    "textContent": {
+        "bundleDetailsHeader": "Bundle Package Details",
+        "addToCartButton": "Aggiungi al carrello",
+        "detailsHeader": "Details",
+        "viewDetails": "View Details"
+    }
+  }

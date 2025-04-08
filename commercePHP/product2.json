@@ -1,0 +1,13 @@
+{
+    "textContent": {
+        "specsHeader": "Specifiche",
+        "colorsHeader": "Colori disponibili",
+        "backButton": "Indietro",
+        "colorHeader": "Colore",
+        "imageHeader": "Immagine",
+        "sizesHeader": "Taglie disponibili",
+        "productNotFound": "Prodotto non trovato",
+        "missingNameParam": "Parametro 'name' mancante nell'URL",
+        "productLoadError": "Errore nel caricamento dei dati del prodotto"
+    }
+}

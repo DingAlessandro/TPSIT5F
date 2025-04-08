@@ -1,0 +1,11 @@
+{
+  "textContent": {
+        "productDetailsHeader": "Dettagli del prodotto",
+        "addToCartButton": "Aggiungi al carrello",
+        "productSpecsHeader": "Specifiche",
+        "viewSpecsLink": "Visualizza specifiche e colori",
+        "productNotFound": "Prodotto non trovato",
+        "missingNameParam": "Parametro 'name' mancante nell'URL",
+        "productLoadError": "Errore nel caricamento dei dati del prodotto"
+    }
+}

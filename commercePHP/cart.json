@@ -1,0 +1,23 @@
+{
+    "textContent": {
+        "cartTitle": "ZOZO-CART",
+        "totalAmountLabel": "Total Amount",
+        "discountCodePlaceholder": "Default Code='sconto'",
+        "applyDiscountButton": "Apply Discount Code",
+        "invalidCodeMessage": "Invalid Code",
+        "viewBundleButton": "View Bundle Packages",
+        "checkoutButton": "Proceed to Checkout",
+        "emptyCartMessage": "Your cart is currently empty.",
+        "purchaseSuccessTitle": "Purchase Successful!",
+        "purchaseSuccessMessage": "Thank you for your purchase. We will process your order shortly.",
+        "closeModalButton": "Close",
+        "deleteButton": "Delete",
+        "decreaseButton": "-",
+        "increaseButton": "+",
+        "sizeLabel": "Size",
+        "colorLabel": "Color",
+        "priceLabel": "Price",
+        "originalTotalLabel": "Original Total",
+        "discountedTotalLabel": "Discounted Total"
+    }
+}
